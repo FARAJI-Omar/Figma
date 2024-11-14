@@ -399,39 +399,46 @@ main h1{
 }
 footer{
     background-color: rgb(39 51 57);
-    padding-top: 10%;
+    padding-top: 3%;
     display: flex;
-    justify-content: space-around;
+}
+
+.footer-items{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 footer div img:first-child{
-    width: 60%;
-    margin-top: -10%;
+    width: 40%;
 }
 footer h4{
     padding-bottom: 30%;
     color: white;
     font-family: sans-serif;
-    font-size: 80%;
+    font-size: 120%;
     font-weight: 400;
+    margin-right: 55%;
 }
 footer a{
-    color: rgb(255, 255, 255, );
+    color: rgb(255, 255, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 60%;
-    font-weight: 100;
+    font-size: 80%;
+    width: 200%;
+    padding: 10%;
+    font-weight: 50;
     text-decoration: none;
     margin-bottom: 2%;
 }
 
 .logo-container{
-    margin-left: 5%;
-    margin-top: -10%;
+    margin-top: -5%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 60%;
-    width: 30%;
+    width: 40%;
     padding: 5%;
     padding-bottom: 5%;
     justify-content: space-between;
@@ -440,38 +447,51 @@ footer a{
     color: rgb(231, 231, 231);
     margin-top: 10%;
     font-family: sans-serif;
-    font-size: 70%;
+    font-size: 90%;
     word-spacing: 4%;
     line-height: 1.5;
+    width: 100%;
 }
 
 .icons-container{
-    width: 90%;
+    width: 60%;
     margin-top: 20%;
+    margin-left: -10%;
     display: flex;
     justify-content: space-evenly;
 }
 .icons-container .icons{
-    width: 80%;
+    width: 350%;
+}
+.support-container{
+    margin-left: 40%;
+    margin-top:-25%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-.company-container, .support-container{
-    margin-left: 10%;
+.company-container{
+    margin-top:-25%;
+    margin-left: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 60%;
-    margin-bottom: 15%;
 }
+
 .email a{
     background-color: hwb(0 40% 60% / 0.653);
     text-decoration: none;
     color: rgba(255, 255, 255, 0.607);
-    padding: 5% 5%;
-    margin-top: -40%;
+    padding: 5% 10%;
+    margin-top: -30%;
     padding-right: 20%;
     border-radius: 6px;
-
+    margin-left: 50%;
+    width: 100%;
 }
 .email a:hover{
     background-color: rgb(92, 179, 92);
@@ -479,10 +499,14 @@ footer a{
 .email {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 27%;
-    width: 20%;
+    align-items: end;
+    height: 100%;
+    width: 25%;
+    margin-left: 20%;
+    margin-top: -120px;
 }
+
+
 }
 
 /* tablet */
@@ -690,7 +714,7 @@ footer a{
         text-decoration: none;
         color: white;
         background-color: green;
-        padding: 2%4%;
+        padding: 2% 4%;
         border-radius: 6px;
         margin-top: 5%; 
         display: inline-block;
@@ -911,6 +935,7 @@ footer a{
     footer{
         background-color: rgb(39 51 57);
         padding-top: 10%;
+        padding-bottom: 5%;
         display: flex;
         justify-content: space-around;
     }
@@ -927,72 +952,77 @@ footer a{
         font-weight: 400;
     }
     footer a{
-        color: rgb(255, 255, 255, );
+        color: rgb(255, 255, 255);
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 60%;
+        font-size: 50%;
         font-weight: 100;
         text-decoration: none;
         margin-bottom: 2%;
+        padding: 5%;
+        width: 300%;
     }
     
     .logo-container{
-        margin-left: 5%;
-        margin-top: -10%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height: 60%;
-        width: 30%;
-        padding: 5%;
+        height: 40%;
+        width: 25%;
         padding-bottom: 5%;
+        padding-left: 5%;
         justify-content: space-between;
     }
     .logo-container p{
         color: rgb(231, 231, 231);
-        margin-top: 10%;
         font-family: sans-serif;
-        font-size: 70%;
+        font-size: 50%;
         word-spacing: 4%;
-        line-height: 1.5;
     }
     
     .icons-container{
-        width: 90%;
-        margin-top: 20%;
+        width: 80%;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
     .icons-container .icons{
-        width: 80%;
+        width: 100%;
     }
 
-    .company-container, .support-container{
-        margin-left: 10%;
+    .support-container{
+        margin-left: 50%;
+        width: 25%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height: 60%;
-        margin-bottom: 15%;
     }
-    .email a{
-        background-color: hwb(0 40% 60% / 0.653);
-        text-decoration: none;
-        color: rgba(255, 255, 255, 0.607);
-        padding: 5% 5%;
-        margin-top: -40%;
-        padding-right: 20%;
-        border-radius: 6px;
     
+    .company-container{
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
-    .email a:hover{
-        background-color: rgb(92, 179, 92);
+
+    .footer-items{
+        display: flex;
+        justify-content: space-evenly;
     }
     .email {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        height: 27%;
-        width: 20%;
+        width: 25%;
+        height: 60%;
+    }
+     #email-link{
+        background-color: hwb(0 40% 60% / 0.653);
+        padding: 5% 5%;
+        border-radius: 5px;
+        padding-right: 20%;
+        width: 80%;
+        margin-top: -40%;
+    }
+    .email a:hover{
+        background-color: rgb(92, 179, 92);
     }
 }
 
@@ -1416,92 +1446,97 @@ footer a{
     .Pellentesque a:hover{
         background-color: rgb(12, 83, 12);
     }
-    
     footer{
         background-color: rgb(39 51 57);
         padding-top: 10%;
+        padding-bottom: 5%;
         display: flex;
         justify-content: space-around;
     }
 
     footer div img:first-child{
         width: 60%;
-        margin-top: 25%;
+        margin-top: -10%;
     }
     footer h4{
         padding-bottom: 30%;
         color: white;
         font-family: sans-serif;
-        font-size: 60%;
+        font-size: 80%;
         font-weight: 400;
     }
     footer a{
-        color: rgb(255, 255, 255, );
+        color: rgb(255, 255, 255);
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 40%;
+        font-size: 50%;
         font-weight: 100;
         text-decoration: none;
         margin-bottom: 2%;
+        padding: 5%;
+        width: 300%;
     }
     
     .logo-container{
-        margin-left: 5%;
-        margin-top: -10%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height: 60%;
-        width: 30%;
-        padding: 5%;
+        height: 40%;
+        width: 25%;
         padding-bottom: 5%;
+        padding-left: 5%;
         justify-content: space-between;
     }
     .logo-container p{
         color: rgb(231, 231, 231);
-        margin-top: 10%;
         font-family: sans-serif;
-        font-size: 40%;
-        font-weight: lighter;
+        font-size: 50%;
         word-spacing: 4%;
-        line-height: 1.5;
     }
     
     .icons-container{
-        width: 90%;
-        margin-top: 20%;
+        width: 80%;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
     .icons-container .icons{
-        width: 80%;
+        width: 100%;
     }
 
-    .company-container, .support-container{
-        margin-left: 10%;
+    .support-container{
+        margin-left: 50%;
+        width: 25%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height: 60%;
-        margin-bottom: 15%;
     }
-    .email a{
-        background-color: hwb(0 40% 60% / 0.653);
-        text-decoration: none;
-        color: rgba(255, 255, 255, 0.607);
-        padding: 5% 5%;
-        margin-top: -40%;
-        border-radius: 6px;
     
+    .company-container{
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .footer-items{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .email {
+        margin-left: 10%;
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        height: 60%;
+    }
+     #email-link{
+        background-color: hwb(0 40% 60% / 0.653);
+        padding: 5% 5%;
+        border-radius: 5px;
+        width: 80%;
+        margin-top: -40%;
     }
     .email a:hover{
         background-color: rgb(92, 179, 92);
-    }
-    .email {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 27%;
-        width: 30%;
     }
    
 }
