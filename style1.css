@@ -19,7 +19,7 @@
  
 .logo {
     width: 15%;
-    margin-right: 5%;
+    margin-left: -10%;
 }
 .burger {
    display: none;
@@ -27,8 +27,8 @@
 
 nav {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: end;
+    justify-content: space-around;
     padding: 2%;
     width: 90%;
     margin: auto;
@@ -36,9 +36,7 @@ nav {
 
 nav ul {
     list-style: none;
-    width: 100%;
-    text-align: center;
-    
+    text-align: center;    
 }
 
 nav ul li {
@@ -55,8 +53,27 @@ nav ul li a {
 nav ul li a:hover {
     color: rgb(35, 146, 35);
 }
+.section1 {
+    background-color: #f5f7fa;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-left: 5%;
+}
 
+.text-container {
+    width: 80%;
+    margin-top: 5%;
+}
+.text-container p{
+    margin-top: 5%;
+}
 
+main h1{
+    font-size: 400%;
+    font-family: sans-serif;
+}
 .title{
     color: black;
 } 
@@ -82,36 +99,11 @@ nav ul li a:hover {
     background-color: rgb(12, 83, 12);
 }
 
-.section1 {
-    background-color: #f5f7fa;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding-top: 5%;
-    height: 100%;
-    margin: auto;  
-}
-
-.text-container {
-    width: 50%;
-    margin-left: 10%;
-    margin-top: 5%;
-}
-
-main h1, p{
-    margin: 0;
-    height: auto;
-}
-
-main h1{
-    font-size: 400%;
-}
-
 #register{
     color: white;
     text-decoration: none;
     background-color: green;
-    margin-top:30px;
+    margin-top: 5%;
     border-radius: 6px;
     display: inline-block;
     padding: 15px 35px;
@@ -120,180 +112,266 @@ main h1{
 #register:hover{
     background-color: rgb(12, 83, 12);
 }
-
-.section2{
-    text-align: center;
+.main-image{
+    width: 70%;
+    padding-left: 10%;
 }
-.section2 p{
-    color: grey;
-}
-.section2 h3{
-    margin-top: 50px;
-    font-size: 250%;
-}
-.section2 img{
-    align-items: center;
+.main-image img{
     width: 80%;
 }
-#manage-title{
-    width: 40%;
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+}
+
+.our-clients{
+    margin-bottom: 10%;
+    justify-content: center;
+}
+
+.our-clients h3{
+    color: #333;
+    font-size: 300%;
+    font-weight: 700;
     text-align: center;
 }
-.section2 .manage-title-class{
-    justify-items: center;
+.logos2-cont{
+    width: 80%;
+    margin-left: 15%;
+}
+
+#logo2{
+    padding-right: 10%;
+}
+
+.our-clients p{
+    font-size: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.manage{
+    margin-bottom: 10%;
+    justify-content: center;
+}
+.manage h3{
+    color: #333;
+    font-size: 300%;
+    font-weight: 700;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+}
+.manage p{
+    font-size: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 2%;
+ 
 }
 
 .section3{
     display: flex;
-    padding: 30px;
-    align-items: center;
-    justify-content: space-around;
+    align-items: center; 
+    margin-bottom: 10%;
+    width: 100%;
+    justify-content: center;
+    align-items: end;
 }
-.section3 .title-box{
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    padding: 30px;
-    align-items: center;
+.section3 .membership, .national, .clubs{
+    width: 30%;
+    justify-items: center;
+}
+
+.section3 .membership h3, .national h3, .clubs h3{
+    font-size: 160%;
+    font-weight: 600;
+    width: 60%;
+    color: #333;
     text-align: center;
 }
-.section3 .title{
-    font-size: 170%;
-    font-weight: 700;
+
+.section3 .membership p, .national p, .clubs p{
+    text-align: center;
+    margin-top: 5%;
+    width: 50%;
+    padding-bottom: 5%;
+    box-shadow: 0 3px 0 rgba(114, 114, 114, 0.1); 
+
 }
 
 .section4{
     display: flex;
+    flex-direction: row;
     align-items: center;
-    padding: 50px;
-    padding-left: 100px;
-    justify-content: space-around;
+    width: 80%;
+    margin-left: 10%;
+}
+.section4 .section4-image{
+    display: flex; 
+    justify-content: center;
+    margin-right: 10%;
+}
 
-} 
-.section4 .title{
+.section4 .section4-text{
+    width: 40%; 
+    margin-left: 5%; 
+}
+.section4 .section4-text h2{
+    margin-bottom: 2%; 
     font-size: 200%;
-    font-weight: 700;
-    width: 70%;
-    margin-left: 100px;
-}
-.section4 p{
-    margin-left: 100px;
-
-}
-.section4 img{
-    width: 25%;
-    height: 50%;
+    color: #333;
 }
 
-.section4 div a{
-    margin-left: 100px;
+.section4 .section4-text p{
+    font-size: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.section4  a{
     text-decoration: none;
     color: white;
-    background-color: green;
-    padding: 10px 20px;
+    background-color: rgb(30, 163, 30);
+    padding: 2% 2%;
     border-radius: 6px;
-    margin-top: 20px; 
+    margin-top: 3%; 
     display: inline-block;
 }
 
-.helping {
-    display: flex; 
-    justify-content: space-around; 
-    align-items: center; 
-    padding: 60px;
+.section5{
     background-color: #f5f7fa;
-}
- 
-.text-container h2 { 
-    font-size: 36px; 
-    color: #333; 
-    margin-top: -20%;
-} 
-.text-container h2:nth-child(2) { 
-    color: #4CAF50; 
-    margin-top: -2px;
-} 
-.text-container p{ 
-    font-size: 90%; 
-    color: #666;
-    margin-top: 5px;
-}
-.helping .stats-container .title{
-    color: #676262;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 800;
-    font-size: 120%;
-    padding: 2px;
-}
-
-.stats-container {
-    display: flex; 
-    gap: 20px; 
-    flex-wrap: wrap;
-    margin-left: 20%;
-}
-.stat { 
-    display: flex; 
-    align-items: center; 
-    width: 40%;
-}
-.stat img { 
-    margin: 20px;
-    width: 50px; 
-    height: 40px
-}
-
-.design{
     display: flex;
-    align-items: center;
-    padding: 50px;
-    padding-left: 100px;
-    justify-content: space-around;
-} 
-.design .title{
-    font-size: 200%;
-    font-weight: 700;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.section5 .text-container{
+    width: 40%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.section5 .text-container h2{
     width: 70%;
-    margin-left: 100px;
+    font-size: 220%;
 }
 
-.design p{
-    margin-left: 100px;
+.section5 .text-container p{
+    width: 90%;
+    font-size: 100%;
+    margin-top: 3%;
 }
-.design img{
+
+.stats-container{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-bottom: 5%;
+}
+
+.stats-container img{
     width: 25%;
-    height: 50%;
 }
 
-.design div a{
-    margin-left: 100px;
+.stats-container .stat1-2, .stat3-4{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 5%;
+    align-items: center;
+}
+.stats-container .stat3-4{
+    margin-left: 2%;
+}
+.stats-container .stat1-2 p{
+    color: #666;
+    font-weight: 700;
+    font-size: 200%;
+}
+.stats-container .stat4{
+    margin-left: 5%;
+}
+.stats-container .stat3-4 p{
+    color: #666;
+    font-weight: 700;
+    font-size: 200%;
+    
+   
+}
+
+.section6{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.section6 .section6-image{
+    display: flex; 
+    justify-content: center;
+    margin-right: 10%;
+}
+.section6 .section6-image img{
+    width: 90%;
+}
+
+.section6 .section6-text{
+    width: 40%; 
+    margin-left: 5%; 
+}
+.section6 .section6-text h2{
+    margin-bottom: 2%; 
+    font-size: 200%;
+    color: #333;
+}
+
+.section6 .section6-text p{
+    font-size: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.section6  a{
     text-decoration: none;
     color: white;
-    background-color: green;
-    padding: 10px 20px;
+    background-color: rgb(30, 163, 30);
+    padding: 2% 2%;
     border-radius: 6px;
-    margin-top: 20px; 
+    margin-top: 3%; 
     display: inline-block;
 }
+
 .tim-smith{
     background-color: #f5f7fa;
     display: flex;
+    flex-direction: row;
     align-items: center;
     padding: 5% 0;
-    justify-content: space-evenly;
+    justify-content: center;
  
 } 
-.tim-smith .img1{
-    margin-left: 2%;
-    margin-right: 10%;
-    width: 25%;
+.tim-smith .tim-smith-image{
+    width: 80%;
+    border-radius: 3%;
+    margin-left: 5%;
+}
+
+.tim-smith .tim-smith-image img{
+    width: 100%;
     border-radius: 3%;
 }
-.tim-smith .img2{
-    display: flex;
-    align-items:  center;
-    justify-content: space-between;
-    margin-top: 5%;
+
+.tim-smith-text{
+    margin-left: 10%;
 }
 .tim-smith p{
     font-family: sans-serif;
@@ -302,25 +380,30 @@ main h1{
     line-height: 1.4;    
     font-weight: 400;
     font-size: 100%;
+    margin-bottom: 2%;
+}
+.tim-smith .tim-smith-text .bottom-image img{
+    margin-top: 5%;
 }
 
 .tim-smith a{
-    width: 35%;
+    margin-left: 10%;
     text-decoration: none;
     color: rgb(67, 156, 67);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 70%;
+    font-size: 100%;
     font-weight: 600;
 }
-
-.caring{
+.section7{
     display: flex;
     flex-direction: column;
     align-items: center;
     
 }
-.caring .title{
-    font-size: 180%;
+.section7 .title{
+    font-size: 220%;
+    font-weight: 600;
+    color: #666;
 }
 
 .title-box{
@@ -329,38 +412,51 @@ main h1{
     text-align: center;
 }
 .title-box p{
+    width: 45%;
     font-size: 100%;
-    margin-top: 5%;
+    margin-top: 2%;
     word-spacing: 2%; 
     line-height: 1.4;  
+    margin-left: 30%;
 }
 
 .cart-container{
     display: flex;
+    flex-direction: row;
+    width: 85%;
     justify-content: center;
 }
 
 .cart{
-    width: 20%;
-    margin: 4%;
+    width: 80%;
+    margin-left: 2%;
+    margin-bottom: 10%;
 }
+
 .cart > img {
     width: 100%;
 }
 
 .detail-box{
+    width: 85.2%;
     margin-top: -25%;
     border-radius: 8px;
-    padding: 10%;
-    font-size: 75%;
-    color: #717171;
+    padding: 5%;
+    font-size: 50%;
+    color: #71771;
     text-decoration: solid;
     background-color: #f5f7fa;
-    width: 85%;
     text-align: center;
-    margin-left: 7.8%;
-    box-shadow: 5px 5px 5px hsl(0, 0%, 85%);
-} 
+    margin-left: 7.5%;
+    box-shadow: 2px 5px 5px hsl(0, 0%, 85%);
+}
+.detail-box h3{
+    font-size: 250%;
+}
+.detail-box .text-3{
+    width: 90%;
+    margin-left: 5%;
+}
 
 .readmore{
     padding-top: 20%;
@@ -369,142 +465,123 @@ main h1{
 .readmore a{
     text-decoration: solid;
     font-weight: 20;
-    font-size: 100%;
+    font-size: 250%;
     color: #4CAF50;
 }
 
 .Pellentesque{
+    display: flex;
+    flex-direction: column;
     background-color: #f5f7fa;
-    text-align: center;
-    padding: 20px;
-    padding-bottom: 50px;
+    padding: 10%;
+    padding-bottom: 2%;
 }
 .Pellentesque h1{
     text-align: center;
-    width: 50%;
-    padding: 50px;
-    margin-left: 25%;
-    font-weight: 700;
-    font-size: 250%;
+    width: 80%;
+    padding: 10%;
+    margin-left: 15%;
+    font-weight: 600;
+    font-size: 400%;
 }
 .Pellentesque a{
+    margin-left: 45%;
     background-color: #2e9532;
     text-decoration: none;
     color: white;
-    padding: 18px 35px;
+    padding: 1.7% 1.7%;
     border-radius: 6px;
+    font-size: 100%;
+    width: 15%;
 }
 .Pellentesque a:hover{
     background-color: rgb(12, 83, 12);
 }
 footer{
-    background-color: rgb(39 51 57);
-    padding-top: 3%;
+    background-color: #333;
     display: flex;
-}
-
-.footer-items{
-    width: 80%;
-    display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-footer div img:first-child{
-    width: 40%;
-}
-footer h4{
-    padding-bottom: 30%;
-    color: white;
-    font-family: sans-serif;
-    font-size: 120%;
-    font-weight: 400;
-    margin-right: 55%;
+    padding-top: 3%;
 }
 footer a{
-    color: rgb(255, 255, 255);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 80%;
-    width: 200%;
-    padding: 10%;
-    font-weight: 50;
     text-decoration: none;
-    margin-bottom: 2%;
-}
-
-.logo-container{
-    margin-top: -5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 40%;
-    padding: 5%;
+    font-size: 90%;
+    padding: 1%;
+    font-family: sans-serif;
+    color: white;
     padding-bottom: 5%;
-    justify-content: space-between;
+}
+.logo-container{
+    width: 25%;
+    justify-content: center;
+    margin-left: 5%;
 }
 .logo-container p{
-    color: rgb(231, 231, 231);
-    margin-top: 10%;
-    font-family: sans-serif;
     font-size: 90%;
-    word-spacing: 4%;
-    line-height: 1.5;
-    width: 100%;
-}
-
-.icons-container{
-    width: 60%;
-    margin-top: 20%;
-    margin-left: -10%;
-    display: flex;
-    justify-content: space-evenly;
-}
-.icons-container .icons{
-    width: 350%;
-}
-.support-container{
-    margin-left: 40%;
-    margin-top:-25%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    font-weight: 50%;
+    color: white;
+    margin-top: 15%;
+    margin-bottom: 15%;
 }
 
 .company-container{
-    margin-top:-25%;
-    margin-left: 40%;
-    width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 60%;
+    width: 25%;
+    justify-content: center;
+    margin-left: 20%;
+    margin-bottom: 5%;
 }
 
-.email a{
-    background-color: hwb(0 40% 60% / 0.653);
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.607);
-    padding: 5% 10%;
-    margin-top: -30%;
-    padding-right: 20%;
-    border-radius: 6px;
-    margin-left: 50%;
-    width: 100%;
+.company-container h4{
+    font-size: 160%;
+    color: white;
+    margin-bottom: 5%;
+}
+
+.support-container{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    justify-content: center;
+    margin-left: -5%;
+    margin-bottom: 5%;
+}
+
+.support-container h4{
+    font-size: 120%;
+    color: white;
+    margin-bottom: 5%;
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    justify-content: center;
+    margin-top: -11%;
+    margin-left: -5%;
+}
+
+.email h4{
+    font-size: 120%;
+    color: white;
+    margin-bottom: 5%;
+}
+
+ #email-link{
+    background-color: hwb(0 40% 60% / 0.5);
+    color: rgb(155, 155, 155);
+    padding: 3% 7%;
+    border-radius: 5px;
+    width: 60%;
+    margin-bottom: 5%;
 }
 .email a:hover{
     background-color: rgb(92, 179, 92);
 }
-.email {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    height: 100%;
-    width: 25%;
-    margin-left: 20%;
-    margin-top: -120px;
-}
+
 
 
 }
@@ -1112,6 +1189,7 @@ footer a{
     }
     
     .text-container {
+        order: 1;
         width: 80%;
         margin-top: 10%;
     }
@@ -1190,6 +1268,9 @@ footer a{
     margin-right: 5%;
    }
 
+    .logo2{
+        width: 25%;
+    }
     .our-clients p{
         font-size: 70%;
         width: 60%;
@@ -1257,7 +1338,7 @@ footer a{
         display: flex;
         flex-direction: column;
         align-items: center; 
-        margin-bottom: 10%;
+        margin-bottom: 2%;
     }
     .section4 .section4-image{
         display: flex; 
@@ -1297,20 +1378,22 @@ footer a{
         background-color: #f5f7fa;
         display: flex;
         flex-direction: column;
-        height: 50%;
-        width: ;
+        align-items: center;        
+        width: 90%;
+        margin-left: 5%;
+        padding-bottom: 5%;
     }
     
     .section5 .text-container{
-        width: 80%;
+        width: 90%;
         display: flex;
         flex-direction: column;
-        justify-content: center; 
-       margin-left: 10%;
+        align-items: center;  
+        text-align: center;  
     }
     
     .section5 .text-container h2{
-        width: 100%;
+        width: 80%;
         font-size: 110%;
     }
 
@@ -1321,24 +1404,30 @@ footer a{
     }
 
     .stats-container{
+        order: 2;
         display: flex;
         flex-direction: column;
         width: 80%;
+        margin-top: 5%;
     }
 
     .stats-container img{
-        width: 30%;
+        width: 20%;
     }
 
     .stats-container .stat1-2, .stat3-4{
         display: flex;
-        width: 90%;
-        justify-content: space-between;
-        margin-left: 25%;
+        width: 100%;
+        justify-content: space-around;
         margin-bottom: 3%;
         margin-top: 5%;
         align-items: center;
-      
+    }
+    .stats-container h3{
+        width: 40%;
+    }
+    .stats-container .stat4{
+        margin-left: 5%;
     }
 
     .section6{
